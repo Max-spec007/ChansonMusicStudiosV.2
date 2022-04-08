@@ -7,6 +7,8 @@ $primary: #45B689;
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
 
+
+
 .nav-link {
   text-align: center;
   // font-family: 'Rubik Puddles', cursive;
@@ -20,10 +22,14 @@ $primary: #45B689;
   color: #5A50A1;
 }
 
-// .container {
-//   background-color: #F9F8F4;
-// }
+body {
+ background-color: #F9F8F4;
+}
 
-// .nav-link-2 {
-//   color: #5A50A1;
-// }
+.paragrah1 {
+  margin-top: 100px;
+}
+
+.LearnMore {
+  font-family: 'Hachi Maru Pop', cursive;
+}

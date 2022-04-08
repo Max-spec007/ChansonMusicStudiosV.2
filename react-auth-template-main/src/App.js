@@ -10,6 +10,8 @@ import SignUp from './components/auth/SignUp'
 import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
+import Home from './components/Home/Home'
+import Lessons from './components/Lessons/Lessons'
 
 class App extends Component {
   constructor (props) {
@@ -56,6 +58,12 @@ class App extends Component {
           />
         ))}
 	      <main className='container'>
+          <Route exact path='/' render= {() => (
+            <Home />
+          )}/>
+          <Route path='/Lessons' render= {() => (
+            <Lessons />
+          )}/>
 	        <Route
             path='/sign-up'
             render={() => (
@@ -67,6 +75,8 @@ class App extends Component {
             render={() => (
               <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
             )}
+          />
+          <div className='app'
           />
           <AuthenticatedRoute
             user={user}
